@@ -2,4 +2,4 @@
 venv/
 
 # Ignore HTML report directory
-report.html/
+ notebook/report.html/
