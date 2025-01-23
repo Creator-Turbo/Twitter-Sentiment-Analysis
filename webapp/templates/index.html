@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Twitter Sentiment Analysis</h1>
+        <form action="/predict" method="POST">
+            <label for="tweet">Enter a tweet to analyze sentiment:</label><br>
+            <textarea name="tweet" id="tweet" rows="4" cols="50" placeholder="Enter tweet here..."></textarea><br>
+            <button type="submit">Analyze Sentiment</button>
+        </form>
+
+        <div class="review-sample">
+            <h2>Sample Reviews:</h2>
+            <p><b>Sample 1:</b> "I love this product, it's amazing!"</p>
+            <p><b>Sample 2:</b> "This service is terrible, very disappointing."</p>
+        </div>
+    </div>
+</body>
+</html>
