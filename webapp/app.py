@@ -6,7 +6,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load the pre-trained model and vectorizer
-model_path = os.path.join('model', 'sentiment_model.pkl')
+model_path = os.path.join('model', 'best_model.pkl')
 vectorizer_path = os.path.join('model', 'preprocessor.pkl')
 
 with open(model_path, 'rb') as model_file:
