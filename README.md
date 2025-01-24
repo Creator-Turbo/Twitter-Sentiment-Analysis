@@ -13,6 +13,7 @@
 - [Bug / Feature Request](#bug--feature-request)
 - [Technologies Used](#technologies-used)
 - [Team](#team)
+- [License](#license)
 - [Credits](#credits)
 
 ---
@@ -216,6 +217,11 @@ This project was developed by:
 - [LinkedIn](https://www.linkedin.com/in/bablu-kumar-pandey-313764286/)
 * **Personal Website**: [My Portfolio](https://creator-turbo.github.io/Creator-Turbo-Portfolio-website/)
 
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+You are free to use, modify, and distribute this software under the terms of the MIT License. For more details, see the [LICENSE](LICENSE) file included in this repository.
 
 
 ## Credits
