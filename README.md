@@ -18,7 +18,7 @@
 ---
 
 ## Demo
-This project processes user reviews of Steam games and predicts whether the sentiment is positive or negative.  
+This project analyzes tweets to determine their sentiment as positive, negative, or neutral.  
 **Link to Demo:** [Steam Review Sentiment Analysis](https://steam-review-sentiment-analysis.onrender.com) 
 
 ## Twitter Sentiment Analysis
@@ -29,36 +29,61 @@ This project processes user reviews of Steam games and predicts whether the sent
 ---
 
 ## Overview
-The **Steam Review Sentiment Analysis** project focuses on analyzing user reviews from the Steam platform to classify them as positive  or negative. Using natural language processing (NLP) and machine learning techniques, the project provides insights into user feedback and gaming trends.
-Add all algo
+The Twitter Sentiment Analysis project leverages natural language processing (NLP) and machine learning techniques to analyze tweets and classify their sentiment. It is designed to provide real-time sentiment insights, making it a powerful tool for businesses, marketers, and researchers.
 
 Key features:
-- Preprocessing of review text data
-- Sentiment classification using machine learning models
-- Interactive web application for real-time predictions
 
+- Preprocessing of tweet text data.
+
+- Sentiment classification using advanced machine learning models.
+
+- Interactive web application for real-time predictions.
 ---
 
 ## Motivation
-Analyzing user sentiment in reviews helps game developers and stakeholders understand user satisfaction and address critical feedback. This project demonstrates the practical use of NLP and machine learning to solve a real-world problem in the gaming industry.
+Sentiment analysis of tweets enables organizations to:
+
+- Understand public opinion on various topics.
+
+- Monitor brand perception in real time.
+
+- Identify trending issues and user sentiments.
+
+- This project demonstrates the practical application of NLP and machine learning to analyze social media content.
 
 ---
 
 ## Technical Aspect
 ### Training Machine Learning Models:
-1. **Data Collection**: Reviews are collected from the Steam platform dataset.
-2. **Preprocessing**:
-   - Tokenization, stop-word removal, and stemming/lemmatization.
-   - Converting text to numerical features using methods like Bag-of-Words or TF-IDF.
-3. **Model Training**:
-   - Classifiers such as Logistic Regression, Naive Bayes, or Random Forest.
-   - Hyperparameter tuning for optimal performance.
-4. **Model Evaluation**:
-   - Performance metrics include accuracy, F1 score, precision, and recall.
+Training Machine Learning Models:
 
-### Building and Hosting a Flask Web App:
-1. A Flask-based web application allows users to input reviews and view sentiment predictions in real-time.
-2. Deployment on Render for easy access.
+Data Collection:
+
+- Tweets are collected using the Twitter API or publicly available datasets.
+
+Preprocessing:
+
+- Removing URLs, mentions, hashtags, and special characters.
+
+- Tokenization, stop-word removal, and stemming/lemmatization.
+
+- Converting text to numerical features using TF-IDF or Word2Vec.
+
+Model Training:
+
+- Models include Logistic Regression, Support Vector Machines (SVM), or BERT.
+
+- Hyperparameter tuning for better accuracy.
+
+Model Evaluation:
+
+- Metrics include accuracy, precision, recall, and F1 score.
+
+- Building and Hosting a Flask Web App:
+
+- A Flask-based web app processes user-inputted tweets and displays predictions.
+
+- Deployed on Render for public access.
 
 ---
 
@@ -69,7 +94,7 @@ The Code is written in Python 3.10. If you don't have Python installed you can f
 
 ```bash
 
-gh repo clone Creator-Turbo/Steam-Review-Sentiment-Analysis
+gh repo clone Creator-Turbo/Twitter-Sentiment-Analysis
 
 ```
 # Install dependencies: (all lib)
@@ -83,44 +108,58 @@ pip install -r requirements.txt
 To train the Machine leaning models:
  To run the Flask web app locally
 ```bash
-python app.py
+python webapp/app.py
 
 ```
 # Deployment on Render
 
 ## To deploy the Flask web app on Render:
-Push your code to GitHub.<br>
-Go to Render and create a new web service.<br>
-Connect your GitHub repository to Render.<br>
-Set up the environment variables if required (e.g., API keys, database credentials).<br>
-Deploy and your app will be live!
+Deployment on Render
 
+- To deploy the web app on Render:
+
+- Push your code to GitHub.
+
+- Log in to Render and create a new web service.
+
+- Connect the GitHub repository.
+
+- Configure environment variables (if any).
+
+- Deploy and access your app live.
 
 
 ## Directory Tree 
 ```
 .
 ├── data
-│   ├── steam_reviews.csv
+│   └── (files inside data directory)
 ├── model
-│   ├── sentiment_model.pkl
-├── static
-│   ├── style.css
-├── templates
-│   ├── index.html
-├── app.py
-├── train_model.py
-├── requirements.txt
+│   └── (files inside model directory)
+├── notebook
+│   └── (files inside notebook directory)
+├── venv
+│   └── (virtual environment files)
+├── webapp
+│   └── (files inside webapp directory)
+├── .gitignore
 ├── README.md
+└── requirements.txt
+
 
 ```
 
 ## To Do
 
-- Define the project goal,"
- prepare the data, and train the model.
-- Set up monitoring tools to track its performance.
-- Automate the pipeline, document the process, test the system, and ensure continuous improvement.
+- Expand dataset to improve model robustness.
+
+- Experiment with advanced models like BERT or GPT-based sentiment classifiers.
+
+- Add sentiment trend visualization to the web app.
+
+- Automate data collection using the Twitter API.
+
+
 
 
 
@@ -132,14 +171,20 @@ If you encounter any bugs or want to request a new feature, please open an issue
 
 
 ## Technologies Used
-Python 3.10<br> 
-scikit-learn<br>
-TensorFlow <br>
-Flask (for web app development)  <br>
-Render (for hosting and deployment)  <br>
-pandas (for data manipulation) <br>
-numpy (for numerical operations)  <br>
-matplotlib (for visualizations) <br>
+- Python 3.10
+
+- scikit-learn
+
+- Flask (for web app development)
+
+- Render (for hosting and deployment)
+
+- pandas (for data manipulation)
+
+- numpy (for numerical computations)
+
+- matplotlib (for visualizations)
+
 
 
 
