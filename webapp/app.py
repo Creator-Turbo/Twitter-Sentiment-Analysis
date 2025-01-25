@@ -31,8 +31,14 @@ def predict():
         
         # Predict sentiment using the trained model
         prediction = model.predict(tweet_df)
-        sentiment = 'Positive' if prediction == 1 else 'Negative'
-        
+        if prediction == 3:
+           sentiment = 'Positive'
+        elif prediction == 2:
+            sentiment = 'Neutral'
+        elif prediction == 1:
+            sentiment = 'Negative'
+        else:
+           sentiment = 'Irrelevant'
         return render_template('result.html', tweet=tweet, sentiment=sentiment)
 
 if __name__ == '__main__':
