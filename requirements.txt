@@ -35,3 +35,7 @@ ipywidgets
 # Model Building 
  xgboost
  lightgbm
+
+
+# SymSpell
+ spacy
